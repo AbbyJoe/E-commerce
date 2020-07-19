@@ -30,21 +30,6 @@ input::placeholder {
     padding: 20px;
     width: 350px;
 }
-/* .show>.btn-secondary.dropdown-toggle {
-    background-color: transparent;
-}
-.btn-secondary {
-    border: none !important;
-    background-color: transparent;
-}
-.btn-secondary:hover {
-    background-color: transparent;
-}
-.btn-secondary:focus, .btn-secondary:active {
-    outline: none !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-} */
 .fixed-top {
     background-color: rgba(0,0,0,0.9);
     color: #1782b8 !important;
@@ -272,4 +257,58 @@ input::placeholder {
       color: #212529;
       text-decoration: none;
       transition: all 1s;
+  }
+.mobile {
+    display: none;
+}
+
+
+
+
+  /* Media Query */
+  @media only screen and (max-width: 768px) {
+    .header h3 {
+        font-size: 32px;
+    }
+    .break {
+        display: none;
+    }
+    .header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+    }
+    .header button {
+        padding: 12px 50px;
+    }
+    .header a {
+        font-size: 20px;
+    }
+    .form-inline input, .form-inline a {
+        display: none;
+    }
+    .nav-flex-icons {
+        margin-left: 0px !important;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-dark .navbar-brand {
+        font-size: 23px;
+    }
+    .mobile {
+        display: block;
+        text-align: left;
+        font-size: 30px;
+        padding: 5px;
+        color: #212529;
+    }
+    .mobile:active {
+        text-decoration: none;
+    }
+    
+    .item__links h5 {
+        font-size: 20px;
+    }
   }
