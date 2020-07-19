@@ -1,42 +1,240 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>CATS</title>
-    </head>
-    <style>
-        body{
-            background-color: gainsboro;
-        }
-        img{
-            height: 200px;
-            width: 305px;
-            padding: 10px;
-            border: 1px solid black;
-        }
-        h1{
-            text-align: center;
-            background: #1abc9c;
-            padding: 10px;
-            
-        }
-    </style>
-    <body>
-        <h1>IMAGES GALLERY</h1>
-        <img src="images/70506_L.jpg" alt="">
-        <img src="images/camer.jpg" alt="">
-        <img src="images/chairs-2181960_1920.jpg" alt="">
-        <img src="images/chairs.jpg" alt="">
-        <img src="images/chairs-2181960_1920.jpg" alt="">
-        <img src="images/chairs.jpg" alt="">
-        <img src="images/70506_L.jpg" alt="">
-        <img src="images/camer.jpg" alt="">
-        <img src="images/70506_L.jpg" alt="">
-        <img src="images/camer.jpg" alt="">
-        <img src="images/chairs-2181960_1920.jpg" alt="">
-        <img src="images/chairs.jpg" alt="">
-        <img src="images/chairs-2181960_1920.jpg" alt="">
-        <img src="images/chairs.jpg" alt="">
-        <img src="images/70506_L.jpg" alt="">
-        <img src="images/camer.jpg" alt="">
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!-- Style CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Tife | Fashion blog</title>
+  </head>
+  <body>
+    <div class="container-fluid nav-head background__image">
+      <div class="bg-cover"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="d-flex w-50">
+        <a href="#" class="navbar-brand font-weight-bold animated bounce">KM<span class="text-info">stores</span><img src="./web/shopping-cart.png" width="30" height="30" style="filter:invert(1)" alt=""></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" arial-controls="navbarSupportedContent-7" arial-expanded="false" arial-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse  navbar-collapse" id="navbarSupportedContent-7">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item brown" >
+            <a class="nav-link" href="#">Women
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item brown" >
+            <a class="nav-link" href="#">Men</a>
+          </li>
+          <li class="nav-item brown" >
+            <a class="nav-link" href="#">Categories</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <div class="md-form mt-0 d-flex align-items-center">
+            <input class="" type="text" placeholder="Search Items, Clothes..." aria-label="Search">
+            <a href=""><img src="./web/search.png" width="20" height="20" style="filter:invert(1)" alt=""></a>
+          </div>
+        </form>
+        <!-- Social Icon  -->
+          <ul class="navbar-nav nav-flex-icons ml-5">
+              <li class="nav-item">
+                  <a href="" class="nav-link"><img src="./web/user.png" width="30" height="30" style="filter:invert(1)" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="btn nav-link dropdown-toggle">
+                    <img src="./web/shopping-cart.png" width="30" height="30" style="filter:invert(1)" alt="">
+                  </a>
+                  <div class="dropdown-menu responsive-table">
+                    <table id="cart-content" class="table u-full-width">
+                      <thead>
+                          <tr>
+                              <th>Image</th>
+                              <th>Name</th>
+                              <th>Price</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+                  <div class="d-flex align-items-center p-2">
+                    <a href="#" id="clear-cart" class="btn btn-info btn-blk">Clear Cart</a>
+                    <a href="#" id="clear-cart" class="btn btn-success btn-blk ml-3">Checkout</a>
+                  </div>
+                  
+                  </div>
+                </div>
+              </li>
+          </ul>
+      </div>
+        
+    </nav>
+
+      <div class="header">
+        <h3>THE NEW COLLECTION<br> IS NOW AVAILABLE</h3>
+       <button type="button" class="btn btn-light btn-lg"><a href="#shop__now">SHOP NOW</a></button>
+      </div>
+    </div>
+
+    <!--full page intro-->
+    <div class="container item__links" id="shop__now">
+        <a href=""><h5>MOST POPULAR</h5></a>
+        <a href=""><h5>VIEW ALL</h5></a>
+    </div>
+    <div class="container" id="items-list">
+        <div class="row">
+            <div class="col-lg-4 mb-3 items">
+                <img src="web/sorin-sirbu-509963-unsplash.jpg" class="img-fluid lightSpeedIn" alt="sorin-sirbu-509963-unsplash">
+                <p class="title">Blouson Jacket</p>
+                <p class="price"><strong>USD $650.00</strong></p>
+                <button type="button" class="btn btn-info add-to-cart" data-id="1">
+                  <img src="./web/shopping-cart.png" width="20" height="20" style="filter:invert(2)" alt=""> Add to Cart 
+                </button>
+            </div>
+            <div class="col-lg-4  mb-3 items">
+                <img src="web/david-yanutama-529152-unsplash.jpg" class="img-fluid lightSpeedIn" alt="david-yanutama-529152-unsplash">
+                <p class="title">Flashdance top</p>
+                <p class="price"><strong>USD $300.00</strong></p>
+                <button type="button" class="btn btn-info add-to-cart" data-id="2">
+                   <img src="./web/shopping-cart.png" width="20" height="20" style="filter:invert(2)" alt=""> Add to Cart
+                </button>
+            </div>
+            <div class="col-lg-4  mb-3 items">
+                <img src="web/alexander-mils-instagram-com-alexandermils-321829.jpg" class="img-fluid lightSpeedIn" alt="alexander-mils-instagram-com-alexandermils-321829">
+                <p class="title">Army Bomber Jacket</p>
+                <p class="price"><strong>USD $400.00</strong></p>
+                <button type="button" class="btn btn-info add-to-cart" data-id="3">
+                  <img src="./web/shopping-cart.png" width="20" height="20" style="filter:invert(2)" alt=""> Add to Cart 
+                </button>
+            </div>
+        </div>
+      </div>
+      <!--shopping-->
+      <div class="container catergory__background">
+        <h5 class="font-weight-bold mb-4">SHOP BY CATERGORY</h5>
+        <div class="row">
+          <div class="col-lg-4 wg-box-content text-center text-white">
+            <a href="#">
+              <div class="wg-box-content-overlay"></div>
+              <img src="web/joseph-barrientos-82309-unsplash.jpg" class="z-depth-5 img-fluid" alt="joseph-barrientos-82309-unsplash">
+              <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                <p>Shoes</p>
+              </div>
+          </a>
+          </div>
+          <div class="col-lg-4 wg-box-content text-center text-white">
+           <a href="#">
+            <div class="wg-box-content-overlay"></div>
+             <img src="web/social-cut-630660-unsplash.jpg" class="img-fluid" alt="social-cut-630660-unsplash">
+             <div class="wg-box-content-details wg-box-fadeIn-bottom">
+               <p>Accessories</p>
+             </div>
+          </a>
+          </div>
+          <div class="col-lg-4 wg-box-content text-center text-white">
+            <a href="#">
+              <div class="wg-box-content-overlay"></div>
+              <img src="web/michael-frattaroli-221247-unsplash.jpg" class="img-fluid" alt="michael-frattaroli-221247-unsplash">
+              <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                <p>Shirts</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+         <div class="row mt-5">
+          <div class="col-lg-4 wg-box-content text-center text-white">
+           <a href="#">
+            <div class="wg-box-content-overlay"></div>
+              <img src="web/sweats.jpg" class="img-fluid" alt="khoman-room-587558-unsplash">
+              <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                <p>Sweats</p>
+              </div>
+          </a>
+          </div>
+          <div class="col-lg-4 wg-box-content text-center text-white">
+           <a href="#">
+              <div class="wg-box-content-overlay"></div>
+              <img src="web/denim.jpg" class="img-fluid" alt="rushina-morrison-329102-unsplash">
+              <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                <p>Jeans</p>
+              </div>
+          </a>
+          </div>
+          <div class="col-lg-4 wg-box-content text-center text-white">
+           <a href="#">
+            <div class="wg-box-content-overlay"></div>
+              <img src="web/jacket.jpg" class="img-fluid" alt="frank-uyt-den-bogaard-653841-unsplash">
+              <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                <p>Jackets</p>
+              </div>
+          </a>
+          </div>
+        </div>
+      </div>
+      <!--end shopping-->
+
+
+    <!--footer-->
+      <footer class="container-fluid footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <h4>HELP & INFORMATION</h4>
+              <ul class="footer__links">
+                <a href=""><li>Help</li></a>
+                <a href=""><li>Track Delivery</li></a>
+                <a href=""><li>Delivery & Returns</li></a>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h4>ABOUT KMstores</h4>
+              <ul class="footer__links">
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>Carrers</li></a>
+                <a href=""><li>Corporate Responsibility</li></a>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h4>MORE FROM KMstores</h4>
+              <ul class="footer__links">
+                <a href=""><li>Mobile and KMstores Apps</li></a>
+                <a href=""><li>KMstores Marketplace</li></a>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h4>SHOPPING FROM:</h4>
+              <ul class="footer__links">
+                <li>You're in. Change</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="footer__terms">
+        <div class="container terms">
+          <h4>&copy; 2020 KMstores</h4>
+          <p><a href="">Privacy & Cookies</a></p>
+        </div>
+      </div>
+    <!--footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
 </html>
